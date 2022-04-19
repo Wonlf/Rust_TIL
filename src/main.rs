@@ -46,7 +46,7 @@
 //In a calm and orderly way 차근차근
 
 //2022-04-18
-fn main(){
+//fn main(){
     // let x = 5;
     // println!("The value of x is: {}", x);
     // x = 6; //기본적으로 변수의 불변성이 적용 컴파일 에러
@@ -65,4 +65,53 @@ fn main(){
     // let x = x * 2;
     // println!("The value of x is: {}", x); //12
     //mut와 재선언의 차이
+//}
+
+//2022-04-19
+fn main(){
+    //rust에도 데이터 타입에 따라 최소 크기와 최대 크기가 정해짐
+    // let x: f64 = 2.0; // f64 1배수의 정밀도인 부동소수점
+    // let y: f32 = 3.0; // f32 2배수의 정밀도인 부동소수점
+    //
+    // // addition
+    // let sum = 5 + 10;
+    //
+    // // subtraction
+    // let difference = 95.5 - 4.3;
+    //
+    // // multiplication
+    // let product = 4 * 30;
+    //
+    // // division
+    // let quotient = 56.7 / 32.2;
+    //
+    // // remainder
+    // let remainder = 43 % 5;
+    //
+    // let t = true;
+    //
+    // let f: bool = false; // with explicit type annotation
+    //
+    // let c = 'z';
+    // let z = 'ℤ'; //특수문자와
+    // let heart_eyed_cat = '😻'; //이모지 사용가능
+    //
+    //
+    // let tup = (500, 6.4, 1); //튜플형
+    //
+    // let (x, y, z) = tup; //튜플 추출
+    //
+    //
+    // let x: (i32, f64, u8) = (500, 6.4, 1); //튜플의 별명 같은걸 추가
+    //
+    // let five_hundred = x.0; // 배열 처럼 사용 가능
+    //
+    // let six_point_four = x.1;
+    //
+    // let one = x.2;
+    //
+    //
+    // let a = [1, 2, 3, 4, 5];// 배열
+    // let first = a[0]; // 접근
+
 }
