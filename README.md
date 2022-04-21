@@ -1,1 +1,1 @@
-##A diary of studying Rust language
+A diary of studying Rust language
