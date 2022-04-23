@@ -117,23 +117,52 @@
 //}
 
 //2022-04-21
-fn main() {
-    fn plus_one(x: i32) -> i32 {
-        x + 1 //반환값은 무조건 세미콜론 없음
+// fn main() {
+//     fn plus_one(x: i32) -> i32 {
+//         x + 1 //반환값은 무조건 세미콜론 없음
+//     }
+//
+//     let y = {
+//         let x = 3;
+//         x + 1 //표현식의 반환값도 세미콜론이 없지만
+//     }; //표현식의 마무리는 무조건 세미콜론
+//
+//     println!("Hello, world!");
+//
+//     another_function(1, 2);
+// }
+//
+//
+// fn another_function(x: i32, y: i32) { //함수 인자값
+//     println!("The value of x is: {}", x);
+//     println!("The value of y is: {}", y);
+// }
+
+//2022-04-21
+fn main(){
+    let number = 3;
+
+    if number < 5 {
+        println!("condition was true");
+    } else {
+        println!("condition was false");
     }
 
-    let y = {
-        let x = 3;
-        x + 1 //표현식의 반환값도 세미콜론이 없지만
-    }; //표현식의 마무리는 무조건 세미콜론
+    let number = 3;
 
-    println!("Hello, world!");
+    if number != 0 { //연산값이 if조건으로 들어감
+        println!("number was something other than zero");
+    }
 
-    another_function(1, 2);
-}
+    let number = 6;
 
-
-fn another_function(x: i32, y: i32) { //함수 인자값
-    println!("The value of x is: {}", x);
-    println!("The value of y is: {}", y);
+    if number % 4 == 0 {
+        println!("number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("number is divisible by 2");
+    } else {
+        println!("number is not divisible by 4, 3, or 2");
+    }
 }
